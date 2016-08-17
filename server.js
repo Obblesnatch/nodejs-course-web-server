@@ -13,6 +13,7 @@ var middleware = {
 	}
 }
 
+
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuth, function(req, res) {
